@@ -46,12 +46,14 @@ input#content-search-area {
     outline: none;
     height: 26px;
     font-family: system-ui;
+    color: #4c4c4c;
+    font-weight: 400;
 }
 
 .glass-style {
     color: #fff;
     background-color: #f7691b;
-    padding: 5px 8px 4px;
+    padding: 5px 11px 4px;
     cursor: pointer;
     position: relative;
     right: 4px;
@@ -59,5 +61,33 @@ input#content-search-area {
 }
 
 .nav-links {
-    background: linear-gradient(50deg, #f9f8ff40, #849fe7a6);
+    background: #f35656;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+a#blogging-elements {
+    font-family: system-ui;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    margin: 7px;
+    padding: 1.5rem 12px 1.5rem;
+}
+
+/* Cross icon */
+div.bar-container {
+    position: absolute;
+    right: 10px;
+    display: inline-block;
+}
+
+.bar-container i {
+    color: #fff;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+a#blogging-elements:hover {
+    background-color: #ac70d9cf;
 }
