@@ -7,6 +7,9 @@ body {
     display: block;
     width: 100vw;
     margin: 0px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
 }
 
 /* Nav Bar */
@@ -14,7 +17,7 @@ nav.blognav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50vh;
+    height: 55vh;
     width: 100vw;
     box-shadow: 0 1px 4.2px 1px #cbcbcbf0;
     background: linear-gradient(50deg, #f9f8ff40, #849fe7a6);
@@ -32,8 +35,9 @@ a.image-link img {
 
 div.nav-features {
     position: relative;
-    right: 30px;
     z-index: 10;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .search-bar {
@@ -43,6 +47,7 @@ div.nav-features {
 /* Search Bar */
 input#content-search-area {
     border: 1px solid rgb(100 100 100 / 60%);
+    border-radius: 2px;
     outline: none;
     height: 26px;
     padding-inline-start: 2px;
@@ -76,13 +81,14 @@ a#blogging-elements {
     text-decoration: none;
     margin: 7px;
     padding: 1.5rem 12px 1.5rem;
+    transition: all 0.2s linear;
 }
 
 /* Cross icon */
 div.bar-container {
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 13px;
+    right: 28px;
     display: inline-block;
     background: #3194eb;
     padding: 11px 11px 1px;
@@ -126,4 +132,32 @@ a#blogging-elements:hover {
 .cross-container .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* On nav bar up to down animation */
+.remove-margin {
+    margin-top: 0rem;
+}
+
+.remove-padding {
+    padding-right: 50px;
+}
+
+/* Section 1 */
+section#section1 {
+    position: relative;
+    text-align: center;
+    width: 100vw;
+}
+
+div.content-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+p.aboutUs-content {
+    width: 98.5%;
+    text-align: center;
 }
